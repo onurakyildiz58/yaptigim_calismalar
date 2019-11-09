@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="onur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 10:08:47 PM"/>
+        <attribute name="created" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTAtMjI7MDk6NTU6MDUgUE07MjQzNg=="/>
+        <attribute name="edited" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTAtMjI7MTA6MDg6NDcgUE07MTsyNTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="millipiyango" type="Integer" array="True" size="7"/>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="x" start="0" end="6" direction="inc" step="1">
+                <assign variable="millipiyango[x]" expression="Random(8)"/>
+            </for>
+            <for variable="y" start="0" end="6" direction="inc" step="1">
+                <output expression="y+1&amp;&quot;.say&#305;=&quot;&amp;millipiyango[y]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="onur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-06 01:31:09 AM"/>
+        <attribute name="created" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTEtMDY7MTI6NDk6MzEgQU07MjQyMA=="/>
+        <attribute name="edited" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTEtMDY7MDE6MzE6MDkgQU07MTsyNTIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, X, TekSayac, CiftSayac, TekToplam, CiftToplam, sayi" type="Integer" array="False" size=""/>
+            <input variable="X"/>
+            <declare name="dizi" type="Integer" array="True" size="X"/>
+            <declare name="ort, CiftOrtalama, TekOrtalama" type="Real" array="False" size=""/>
+            <assign variable="CiftToplam" expression="0"/>
+            <assign variable="TekToplam" expression="0"/>
+            <assign variable="TekSayac" expression="0"/>
+            <assign variable="CiftSayac" expression="0"/>
+            <for variable="a" start="0" end="X-1" direction="inc" step="1">
+                <input variable="sayi"/>
+                <assign variable="dizi[a]" expression="sayi"/>
+            </for>
+            <for variable="b" start="0" end="X-1" direction="inc" step="1">
+                <if expression="dizi[b]%2==0">
+                    <then>
+                        <assign variable="CiftToplam" expression="CiftToplam+dizi[b]"/>
+                        <assign variable="CiftSayac" expression="CiftSayac+1"/>
+                        <assign variable="CiftOrtalama" expression="CiftToplam/CiftSayac"/>
+                        <output expression="&quot;girilen &#231;ift say&#305;lar&#305;n ortalamas&#305;=&quot;&amp;CiftOrtalama" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="TekToplam" expression="TekToplam+dizi[b]"/>
+                        <assign variable="TekSayac" expression="TekSayac+1"/>
+                        <assign variable="TekOrtalama" expression="TekToplam/TekSayac"/>
+                        <output expression="&quot;girilen tek say&#305;lar&#305;n ortalamas&#305;=&quot;&amp;TekOrtalama" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="ort" expression="(CiftOrtalama+TekOrtalama)/2"/>
+            <output expression="&quot;toplam ortalama=&quot;&amp;ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

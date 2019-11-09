@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="onur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-02 12:10:26 AM"/>
+        <attribute name="created" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTEtMDE7MTE6MTU6NDkgUE07MjQzMQ=="/>
+        <attribute name="edited" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTEtMDI7MTI6MTA6MjYgQU07MTsyNTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, us, sayac, toplam" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="us" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;say&#305; gir hele&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="c" expression="a"/>
+            <while expression="a!=0">
+                <assign variable="b" expression="a%10"/>
+                <assign variable="toplam" expression="b+toplam"/>
+                <assign variable="a" expression="a/10"/>
+                <assign variable="sayac" expression="sayac+1"/>
+            </while>
+            <assign variable="us" expression="toplam^sayac"/>
+            <output expression="&quot;basamak toplamlar&#305;n&#305;n kares&#305;= &quot;&amp;us" newline="True"/>
+            <if expression="us==c">
+                <then>
+                    <output expression="&quot;say&#305; neon say&#305;d&#305;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;say&#305; neon say&#305; de&#287;ildir&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

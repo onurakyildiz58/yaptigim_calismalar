@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="onur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 09:35:43 PM"/>
+        <attribute name="created" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTAtMTU7MDk6MTk6MzcgUE07MjQ0Mw=="/>
+        <attribute name="edited" value="b251cjtLQVJBTUFOLVBDOzIwMTktMTAtMTU7MDk6MzU6NDMgUE07MjsyNTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="girilen sayinin tek mi cift mi oldugunu soyler"/>
+            <declare name="sayi, ciftToplam, tekToplam" type="Integer" array="False" size=""/>
+            <assign variable="ciftToplam" expression="0"/>
+            <assign variable="tekToplam" expression="0"/>
+            <assign variable="sayi" expression="0"/>
+            <while expression="sayi&gt;=0">
+                <output expression="&quot;sayi giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi%2==0">
+                    <then>
+                        <output expression="sayi&amp; &quot;cifttir&quot;" newline="True"/>
+                        <assign variable="ciftToplam" expression="ciftToplam+sayi"/>
+                    </then>
+                    <else>
+                        <output expression="sayi&amp; &quot;tektir&quot;" newline="True"/>
+                        <assign variable="tekToplam" expression="tekToplam+sayi"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
