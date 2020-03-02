@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fibonacci sayı dizisi", "fibonacci sayı dizisi\fibonacci sayı dizisi.csproj", "{88FA4100-C93E-454C-A99A-781AAAC61710}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88FA4100-C93E-454C-A99A-781AAAC61710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FA4100-C93E-454C-A99A-781AAAC61710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FA4100-C93E-454C-A99A-781AAAC61710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FA4100-C93E-454C-A99A-781AAAC61710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEA119CA-43B3-4DDC-9F20-00EDAAC6587E}
+	EndGlobalSection
+EndGlobal

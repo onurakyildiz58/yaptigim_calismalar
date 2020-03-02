@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrislerde toplam vol.2", "matrislerde toplam vol.2\matrislerde toplam vol.2.csproj", "{70F0E510-1D48-4DA4-8BC6-1BDA74C97096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70F0E510-1D48-4DA4-8BC6-1BDA74C97096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F0E510-1D48-4DA4-8BC6-1BDA74C97096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F0E510-1D48-4DA4-8BC6-1BDA74C97096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F0E510-1D48-4DA4-8BC6-1BDA74C97096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC4A59C4-CFE8-4ED0-8115-BAD0E677E743}
+	EndGlobalSection
+EndGlobal
